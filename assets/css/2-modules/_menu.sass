@@ -1,0 +1,72 @@
+.navbar-default .navbar-nav > li > a
+  color: #202020
+  font-size: 16px
+  font-weight: 400
+  text-transform: capitalize
+  position: relative
+
+.navbar-nav > li > a
+  padding-right: 20px
+  padding-left: 20px
+
+.navbar-default .navbar-nav > li > a
+  &.active:after
+    background-color: #00aeef
+    bottom: -24px
+    content: ""
+    height: 5px
+    left: 0
+    position: absolute
+    transition: all 0.2s ease 0s
+    width: 100%
+  &::after
+    background-color: #00aeef
+    bottom: -24px
+    content: ""
+    height: 5px
+    left: 0
+    position: absolute
+    transition: all 0.2s ease 0s
+    width: 0%
+  &:hover:after
+    width: 100%
+
+.navbar-brand
+    padding: 0
+    img
+        height: auto
+        width: 95px
+
+.navbar-nav.navbar-right:last-child
+  margin-right: 20px
+
+.main-nav, .button.navbar-right
+  padding-top: 10px
+
+.nav-button
+  background-color: #c2c2c2
+  border: medium none
+  color: #fff
+  font-size: 16px
+  padding: 8px 20px
+  border-radius: 2px
+  transition: all 0.4s ease
+  &.login
+    background-color: #00AEEF
+    margin-right: 5px
+  &:hover
+    background-color: #00AEEF
+
+.navbar
+  margin-bottom: 0px
+  min-height: 100px
+
+.navbar-default
+  background-image: none
+  background-color: #fff
+  background-repeat: repeat-x
+  border-radius: 4px
+  box-shadow: none
+
+.navbar .container
+  padding-top: 15px
