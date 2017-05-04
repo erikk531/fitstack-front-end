@@ -1,0 +1,161 @@
+.nav-tabs > li
+  > a
+    color: #666
+    font-weight: 300
+    border-width: 4px
+  &.active > a
+    border-color: transparent transparent #00AEEF
+    border-style: solid
+    border-width: 4px
+    color: #666666
+    cursor: default
+    font-weight: 700
+    outline: none
+    &:hover, &:focus
+      border-color: transparent transparent #00AEEF
+      border-style: solid
+      border-width: 4px
+      color: #666666
+      cursor: default
+      font-weight: 700
+      outline: none
+
+.job-posting
+  padding: 60px 0
+  .tab-content
+    margin-top: 30px
+
+.tab-content ul li
+  margin-right: 14px
+  overflow: hidden
+  &:last-child
+    margin-right: 0
+  a
+    position: relative
+    &:hover .overlay
+      opacity: 1
+
+.overlay
+  background: linear-gradient(transparent 57%, rgba(0, 0, 0, 1) 100%)
+  border-radius: 2px
+  height: 189px
+  left: 0
+  position: absolute
+  top: -82px
+  width: 98%
+  opacity: 0
+  transition: all 0.2s ease-in-out
+  > h3
+    bottom: -50px
+    margin: 0
+    position: absolute
+    left: 15px
+    color: #fff
+    font-weight: 700
+    font-size: 17px
+    transition: all 0.2s ease-in-out
+
+.tab-content ul
+  li a:hover .overlay h3
+    bottom: 20px
+  &.job-seeker li a
+    .overlay h3
+      bottom: -100px
+    &:hover .overlay h3
+      bottom: 35px
+    .overlay p
+      bottom: 3px
+      color: #fff
+      font-weight: 400
+      left: -100px
+      position: absolute
+      transition: all 0.2s ease-in-out
+      transition-delay: 0.2s
+    &:hover .overlay p
+      left: 18px
+
+.jobs
+  margin-bottom: 60px
+  margin-top: 50px
+
+.job-add
+  background: url(img/job-add.png)
+  height: 500px
+  h2
+    color: #fff
+    font-size: 38px
+    font-weight: 800
+    margin: 0
+    padding: 305px 20px 0
+    text-transform: uppercase
+  a
+    background: none repeat scroll 0 0 #00aeef
+    border-radius: 5px
+    color: #fff
+    display: inline-block
+    margin: 30px 0 0 20px
+    padding: 21px 55px
+    font-size: 15px
+
+.table-responsive
+  margin-bottom: 15px
+  overflow-x: auto
+  overflow-y: hidden
+  width: 100%
+
+.testimonial
+  position: relative
+  margin-top: 50px
+  margin-bottom: 70px
+  .item
+    padding-bottom: 30px
+    .client-face
+      position: absolute
+      top: 78px
+      right: 130px
+
+.client-face > img
+  border: 5px solid #fff
+  border-radius: 50%
+
+.testimonial .owl-theme .owl-controls .owl-page span
+  background: #00AEEF
+
+.client-text
+  background: none repeat scroll 0 0 #00aeef
+  border-radius: 2px
+  color: #fff
+  margin-left: 175px
+  padding: 20px 30px
+  width: 800px
+  p
+    line-height: 30px
+  h4
+    font-size: 15px
+    i
+      font-size: 13px
+
+body
+  overflow: hidden
+
+/* Preloader
+
+#preloader
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: #fff
+  z-index: 99
+
+#status
+  width: 200px
+  height: 200px
+  position: absolute
+  left: 50%
+  top: 50%
+  background-image: url(img/preloader.gif)
+  background-repeat: no-repeat
+  background-position: center
+  margin: -100px 0 0 -100px

@@ -1,0 +1,166 @@
+.search-results
+    background: #f2f2f2
+    padding-bottom: 50px
+    .container
+        background: #f2f2f2
+        position: relative
+        margin-top: -4%
+        border-top-left-radius: 8px
+        border-top-right-radius: 8px
+        .featured-apps
+            margin: 40px 0 80px
+
+        ul.filter
+            padding: 0
+            li
+                padding: 20px
+                display: table-cell
+                width: 1%
+                border-bottom: 2px solid #f5f5f5
+                transition: .6s all ease-in-out
+                &.active-filter
+                    border-bottom: 2px solid #00AEEF
+                a
+                    color: #333
+                    font-weight: 500
+                &:hover,
+                &:focus
+                    background: #00AEEF
+                    border-bottom: 2px solid #00AEEF
+                    color: #fff
+                    a
+                        color: #fff
+                        text-decoration: none
+                    .filter-slider
+                        &::-webkit-slider-runnable-track
+                            background: #fff
+                &:first-of-type
+                    border-top-left-radius: 8px
+                &:last-of-type
+                    border-top-right-radius: 8px
+            .slider-filter
+                align-items: center
+                display: flex
+                flex-direction: column
+                justify-content: center
+                position: relative
+                user-select: none
+                width: 100%
+
+
+                .filter-slider
+                    -webkit-appearance: none
+                    background: transparent
+                    width: 100%
+                    &::-webkit-slider-thumb
+                        -webkit-appearance: none
+                    &:focus
+                        outline: none
+                    &::-ms-track
+                        background: transparent
+                        border-color: transparent
+                        color: transparent
+                        cursor: pointer
+                        width: 100%
+                    &::-webkit-slider-thumb
+                        -webkit-appearance: none
+                        background: #FFF
+                        border-radius: 100%
+                        border-width: 0
+                        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3)
+                        cursor: pointer
+                        height: 16px
+                        margin-top: -8px
+                        width: 16px
+                    &::-webkit-slider-runnable-track
+                        background: #00AEEF
+                        cursor: pointer
+                        height: 2px
+                        width: 100%
+
+                .filter-output
+                    align-items: center
+                    background-color: #FFF
+                    border-radius: 100%
+                    bottom: 52px
+                    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3)
+                    color: #00AEEF
+                    display: flex
+                    font-family: Montserrat
+                    font-size: 0.8em
+                    font-weight: 700
+                    height: 35px
+                    justify-content: center
+                    left: -9px
+                    opacity: 0
+                    padding: 8px
+                    position: absolute
+                    text-align: center
+                    visibility: none
+                    width: 35px
+                    will-change: transform
+                    &.active
+                        opacity: 1
+                        transition: 0.15s ease
+                        visibility: visible
+.search-results-tech
+    margin-top: 25px
+    .fix-grid
+        display: none
+    .col-md-4
+        margin-bottom: 25px
+        .single-tech
+            box-shadow: 0px 10px 11px -5px rgba(51,51,51,0.44);
+            background: #fff
+            padding: 15px
+            .triangle-container
+                position: absolute
+                bottom: -23px
+                right: 10px
+                cursor: pointer
+                .triangle
+                    width: 0
+                    height: 0
+                    border-top: 35px solid transparent
+                    border-bottom: 35px solid transparent
+                    border-left: 35px solid #00AEEF
+                    border-radius: 4px
+                    transform: rotate(45deg)
+                    bottom: 0
+                    transition: 0.6s all ease-in-out
+                .triangle-content
+                    position: absolute
+                    bottom: 18px
+                    right: 8px
+                    color: #fff
+                    font-size: 25px
+                    transition: 0.6s all ease-in-out
+                &:hover,
+                &:focus
+                    .triangle-content
+                        color: #00AEEF
+                    .triangle
+                        border-left: 35px solid #f3f3f3
+            .app-footer
+                .star-raiting
+                    color: #FFD700
+                    font-size: 18px
+.more-tech-btn
+    margin-top: 25px
+    .btn-more
+        border-radius: 50%
+        width: 50px
+        height: 50px
+        background-color: #00AEEF
+        color: #fff
+        position: relative
+        transition: 0.5s all ease-in-out
+        i
+            font-size: 45px
+            margin-top: -13px
+            margin-left: -13px
+            position: absolute
+        &:hover,
+        &:focus
+            background-color: darken(#00AEEF, 5%)
+            box-shadow: 0px 10px 9px 0px rgba(51,51,51,0.44);
